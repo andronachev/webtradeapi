@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTradeApi", "WebTradeApi\WebTradeApi.csproj", "{3A61124B-767C-4C5C-8A0E-D913A99225A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTradeApi", "WebTradeApi\WebTradeApi.csproj", "{3A61124B-767C-4C5C-8A0E-D913A99225A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTrade.Core", "WebTrade.Code\WebTrade.Core.csproj", "{D6B8BBF4-17E2-466B-BBB5-5684472EDE4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTrade.Infrastructure", "WebTrade.Infrastructure\WebTrade.Infrastructure.csproj", "{A4D43215-1745-40A5-A23F-1C1F33ED307C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTrade.Infrastructure", "WebTrade.Infrastructure\WebTrade.Infrastructure.csproj", "{A4D43215-1745-40A5-A23F-1C1F33ED307C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTrade.Services", "WebTrade.Services\WebTrade.Services.csproj", "{0D5E8370-FFEA-4764-835E-5C54C0BC2597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTrade.Services", "WebTrade.Services\WebTrade.Services.csproj", "{0D5E8370-FFEA-4764-835E-5C54C0BC2597}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTrade.Core", "WebTrade.Core\WebTrade.Core.csproj", "{D894447D-E401-475C-851E-657F0C02450A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		{3A61124B-767C-4C5C-8A0E-D913A99225A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A61124B-767C-4C5C-8A0E-D913A99225A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A61124B-767C-4C5C-8A0E-D913A99225A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D6B8BBF4-17E2-466B-BBB5-5684472EDE4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6B8BBF4-17E2-466B-BBB5-5684472EDE4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6B8BBF4-17E2-466B-BBB5-5684472EDE4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6B8BBF4-17E2-466B-BBB5-5684472EDE4C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A4D43215-1745-40A5-A23F-1C1F33ED307C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4D43215-1745-40A5-A23F-1C1F33ED307C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4D43215-1745-40A5-A23F-1C1F33ED307C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{0D5E8370-FFEA-4764-835E-5C54C0BC2597}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D5E8370-FFEA-4764-835E-5C54C0BC2597}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D5E8370-FFEA-4764-835E-5C54C0BC2597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D894447D-E401-475C-851E-657F0C02450A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D894447D-E401-475C-851E-657F0C02450A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D894447D-E401-475C-851E-657F0C02450A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D894447D-E401-475C-851E-657F0C02450A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
