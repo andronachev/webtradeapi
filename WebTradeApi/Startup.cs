@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -10,11 +12,14 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Text.Json;
 using System.Threading.Tasks;
 using WebTrade.Core.Interfaces;
 using WebTrade.Core.Interfaces.Services;
 using WebTrade.Infrastructure;
 using WebTrade.Services;
+using WebTradeApi.Middleware;
 
 namespace WebTradeApi
 {
@@ -62,10 +67,14 @@ namespace WebTradeApi
 
             app.UseAuthorization();
 
+            app.UseMiddleware<ErrorHandlerMiddleware>();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
         }
     }
+
+    
 }

@@ -31,9 +31,11 @@ namespace WebTradeApi.Controllers
             return securities;
         }
 
-        [HttpPost]
-        public ActionResult Post(Trade trade)
+        [HttpPut]
+        [Route("/Security/{securityId}/")]
+        public ActionResult Put(Guid securityId, decimal marketPrice)
         {
+            _securityService.UpdateMarketPrice(securityId, marketPrice);
             return Ok();
         }
     }
